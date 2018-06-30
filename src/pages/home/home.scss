@@ -1,0 +1,51 @@
+page-home {
+
+}
+.card-background-page {
+    
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 1.5em;
+        width: 100%;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+      }
+    
+    }
+  #ReservaHead{ 
+      width:30%;
+      margin-left:35%;
+      margin-right:auto;
+    } 
+    .inner{
+        width: 800px;
+        height: 100%;
+        ion-card{
+            display: table-cell;
+            border: solid 1px #ccc;
+        }
+    }
+    ion-scroll{
+        .scroll-content{
+            padding: 0;
+        }
+        ion-card{
+            width: 25vh;
+            img{
+               width: 60vh;     
+            }
+        }
+    }

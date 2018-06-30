@@ -1,0 +1,69 @@
+
+
+<ion-content padding class="card-background-page">
+  <img src="../assets/imgs/ReservaNegro.png" alt="Reservá" id="ReservaHead">
+  <div padding>
+    <ion-segment [(ngModel)]="SlideTabsPrincipal">
+      <ion-segment-button value="Favoritos">
+        Favoritos
+      </ion-segment-button>
+      <ion-segment-button value="Promociones">
+        Promociones
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="SlideTabsPrincipal">
+    <ion-list *ngSwitchCase="'Favoritos'">
+      <ion-item>
+        
+          <ion-scroll scrollX="true" style="width:100%; height:100px;">
+            <div class="inner">
+              <ion-card *ngFor="let data of datas" class="col-md-5">
+                 <img src="../assets/imgs/Barberia2.png"/>
+              </ion-card>
+            </div>
+          </ion-scroll>
+          
+      
+       
+      </ion-item>
+      ...
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'Promociones'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <ion-card>
+            <img src="../assets/imgs/Barberia2.png"/>
+            <div class="card-title">Barbería</div>
+          </ion-card>
+        </ion-thumbnail>
+        
+      </ion-item>
+      ...
+    </ion-list>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>
+        
+          
+                <ion-card>
+                  <img src="../assets/imgs/Barberia2.png"/>
+                  <div class="card-title">Barbería</div>
+                </ion-card>
+
+      </ion-col>
+      <ion-col width-50>
+
+                <ion-card>
+                  <img src="../assets/imgs/Barberia2.png"/>
+                  <div class="card-title">Estética</div>
+                </ion-card>
+
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+</ion-content>
